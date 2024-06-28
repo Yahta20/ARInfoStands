@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: StandsLib
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5246111739701716852
+  m_GuidHigh: 16149991252874594954
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5116251126565674609
+      m_GuidHigh: 133503887026198709
+    m_SerializedTextureGuid:
+      m_GuidLow: 13048331791878224078
+      m_GuidHigh: 8529739754696600184
+    m_Size: {x: 0.95116425, y: 1.94}
+    m_SpecifySize: 1
+    m_Name: "\u0441\u0442\u0435\u043D\u0434\u044B_2024+"
+    m_Texture: {fileID: 2800000, guid: b65678cefca1b51478ea37491db95f76, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5433895943501305816
+      m_GuidHigh: 39049733823016098
+    m_SerializedTextureGuid:
+      m_GuidLow: 9674875093221352731
+      m_GuidHigh: 9221919733675629498
+    m_Size: {x: 0.95116425, y: 1.94}
+    m_SpecifySize: 1
+    m_Name: "\u0441\u0442\u0435\u043D\u0434\u044B_2024+2"
+    m_Texture: {fileID: 2800000, guid: 39bba51b0fa38644ba9be65023d7fa7f, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5314713622658481593
+      m_GuidHigh: 13203603406437361838
+    m_SerializedTextureGuid:
+      m_GuidLow: 12269134048733741560
+      m_GuidHigh: 13394149067147191128
+    m_Size: {x: 0.95116425, y: 1.94}
+    m_SpecifySize: 1
+    m_Name: "\u0441\u0442\u0435\u043D\u0434\u044B_2024+3"
+    m_Texture: {fileID: 2800000, guid: a46cc1f8b869aa445823f07f9c93e1b9, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5427929488693819727
+      m_GuidHigh: 1754534187495189688
+    m_SerializedTextureGuid:
+      m_GuidLow: 6734242071415817677
+      m_GuidHigh: 7776506504157993272
+    m_Size: {x: 0.95116425, y: 1.94}
+    m_SpecifySize: 1
+    m_Name: "\u0441\u0442\u0435\u043D\u0434\u044B_2024+4"
+    m_Texture: {fileID: 2800000, guid: 023b05cdd57c5d743819dabd76b3eb6b, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5298767261413601224
+      m_GuidHigh: 2355006387427838340
+    m_SerializedTextureGuid:
+      m_GuidLow: 15065821845966979621
+      m_GuidHigh: 7396193361959496714
+    m_Size: {x: 0.95116425, y: 1.94}
+    m_SpecifySize: 1
+    m_Name: "\u0441\u0442\u0435\u043D\u0434\u044B_2024+5"
+    m_Texture: {fileID: 2800000, guid: 922e82258d25d1140aacb20dad8ea466, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5442033904289652647
+      m_GuidHigh: 10185115353215241366
+    m_SerializedTextureGuid:
+      m_GuidLow: 15056699200336804259
+      m_GuidHigh: 17234757010145216120
+    m_Size: {x: 0.3, y: 0.16875}
+    m_SpecifySize: 1
+    m_Name: Gerb_Render_n_en_1920_1080
+    m_Texture: {fileID: 0}
