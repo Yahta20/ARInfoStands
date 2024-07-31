@@ -10,60 +10,60 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
-  m_Name: StandsLib
+  m_Name: ILR
   m_EditorClassIdentifier: 
-  m_GuidLow: 5246111739701716852
-  m_GuidHigh: 16149991252874594954
+  m_GuidLow: 5364548503400520280
+  m_GuidHigh: 17313986955318135213
   m_DataStore:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 5116251126565674609
-      m_GuidHigh: 133503887026198709
+      m_GuidLow: 5376754859415908574
+      m_GuidHigh: 15140470530604389808
     m_SerializedTextureGuid:
       m_GuidLow: 11526091575522372835
       m_GuidHigh: 1035807273659749210
     m_Size: {x: 0.95116425, y: 1.94}
     m_SpecifySize: 1
-    m_Name: I
+    m_Name: "\u0441\u0442\u0435\u043D\u0434\u044B_2024+"
     m_Texture: {fileID: 2800000, guid: 57a22ce3e7389ff45a53413a3aed5f0e, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 5433895943501305816
-      m_GuidHigh: 39049733823016098
+      m_GuidLow: 5008539863860377744
+      m_GuidHigh: 15405223524888356790
     m_SerializedTextureGuid:
       m_GuidLow: 16227695048600233350
       m_GuidHigh: 1724391992532405145
     m_Size: {x: 0.95116425, y: 1.94}
     m_SpecifySize: 1
-    m_Name: II
+    m_Name: "\u0441\u0442\u0435\u043D\u0434\u044B_2024+2"
     m_Texture: {fileID: 2800000, guid: 2f2ea5865aabe134990b6c886145ee17, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 5314713622658481593
-      m_GuidHigh: 13203603406437361838
+      m_GuidLow: 4942285941992947718
+      m_GuidHigh: 7203831863866482860
     m_SerializedTextureGuid:
       m_GuidLow: 8350979746279199813
       m_GuidHigh: 8157231847060683018
     m_Size: {x: 0.95116425, y: 1.94}
     m_SpecifySize: 1
-    m_Name: III
+    m_Name: "\u0441\u0442\u0435\u043D\u0434\u044B_2024+3"
     m_Texture: {fileID: 2800000, guid: 77741445a3d573e40a398e62254f3471, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 5427929488693819727
-      m_GuidHigh: 1754534187495189688
+      m_GuidLow: 5145957425442864738
+      m_GuidHigh: 6343376394230322824
     m_SerializedTextureGuid:
       m_GuidLow: 18015762483384551710
       m_GuidHigh: 4125338297126657562
     m_Size: {x: 0.95116425, y: 1.94}
     m_SpecifySize: 1
-    m_Name: IV
+    m_Name: "\u0441\u0442\u0435\u043D\u0434\u044B_2024+4"
     m_Texture: {fileID: 2800000, guid: ebf2091ed886fa041a9e8c0253254039, type: 3}
   - m_SerializedGuid:
-      m_GuidLow: 5298767261413601224
-      m_GuidHigh: 2355006387427838340
+      m_GuidLow: 5012303101252646379
+      m_GuidHigh: 13651782027053333671
     m_SerializedTextureGuid:
       m_GuidLow: 11093579188291190798
       m_GuidHigh: 9131888108787163818
     m_Size: {x: 0.95116425, y: 1.94}
     m_SpecifySize: 1
-    m_Name: V
+    m_Name: "\u0441\u0442\u0435\u043D\u0434\u044B_2024+5"
     m_Texture: {fileID: 2800000, guid: d5c3400e4f7e99f4aa62df24dafbba7e, type: 3}

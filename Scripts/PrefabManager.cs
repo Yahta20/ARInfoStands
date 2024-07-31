@@ -96,6 +96,8 @@ using System.Linq;
                 // Give the initial image a reasonable default scale
                 var minLocalScalar = Mathf.Min(trackedImage.size.x, trackedImage.size.y) / 2;
                 trackedImage.transform.localScale = new Vector3(minLocalScalar, minLocalScalar, minLocalScalar);
+                print("wwwwwwww"); 
+                print($"{trackedImage}"); 
                 AssignPrefab(trackedImage);
                 
         
@@ -124,46 +126,30 @@ using System.Linq;
         {
             if (item!=trackedImage.referenceImage.guid)
             {
-                //m_Instantiated[item].SetActive(false);
             }
         }
-
-
-            //print(trackedImage);
-            //m_PrefabsDictionary.TryGetValue(trackedImage.referenceImage.guid, out var prefab)
-            //.Any(key => key != trackedImage.referenceImage.guid);
-
-            //m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, trackedImage.transform);
-            //m_Instantiated[trackedImage.referenceImage.guid].gameObject.name = trackedImage.name;
-
-
     }
 
-    
-
     void AssignPrefab(ARTrackedImage trackedImage)
-        {
-            if (m_PrefabsDictionary.TryGetValue(trackedImage.referenceImage.guid, out var prefab)) { 
-                m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, trackedImage.transform);
-                //m_Instantiated[trackedImage.referenceImage.guid].gameObject.name = trackedImage.name;
-
-            }
-
-
+    {
+        print("iiui1");    
+        if (m_PrefabsDictionary.TryGetValue(trackedImage.referenceImage.guid, out var prefab)) { 
+            m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, trackedImage.transform);
+            print("iiui");    
         }
-
-        public GameObject GetPrefabForReferenceImage(XRReferenceImage referenceImage)
+    }
+    public GameObject GetPrefabForReferenceImage(XRReferenceImage referenceImage)
             => m_PrefabsDictionary.TryGetValue(referenceImage.guid, out var prefab) ? prefab : null;
 
-        public void SetPrefabForReferenceImage(XRReferenceImage referenceImage, GameObject alternativePrefab)
+    public void SetPrefabForReferenceImage(XRReferenceImage referenceImage, GameObject alternativePrefab)
+    {
+        m_PrefabsDictionary[referenceImage.guid] = alternativePrefab;
+        if (m_Instantiated.TryGetValue(referenceImage.guid, out var instantiatedPrefab))
         {
-            m_PrefabsDictionary[referenceImage.guid] = alternativePrefab;
-            if (m_Instantiated.TryGetValue(referenceImage.guid, out var instantiatedPrefab))
-            {
-                m_Instantiated[referenceImage.guid] = Instantiate(alternativePrefab, instantiatedPrefab.transform.parent);
-                Destroy(instantiatedPrefab);
-            }
+            m_Instantiated[referenceImage.guid] = Instantiate(alternativePrefab, instantiatedPrefab.transform.parent);
+            Destroy(instantiatedPrefab);
         }
+    }
 
 #if UNITY_EDITOR
         /// <summary>
