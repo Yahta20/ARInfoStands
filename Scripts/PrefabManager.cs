@@ -15,19 +15,19 @@ using System.Linq;
 /// and overlays some prefabs on top of the detected image.
 /// </summary>
 [RequireComponent(typeof(ARTrackedImageManager))]
-    public class standPrefabImagePairManager : MonoBehaviour, ISerializationCallbackReceiver
+    public class PrefabManager : MonoBehaviour, ISerializationCallbackReceiver
     {
         /// <summary>
         /// Used to associate an `XRReferenceImage` with a Prefab by using the `XRReferenceImage`'s guid as a unique identifier for a particular reference image.
         /// </summary>
         [Serializable]
-        struct NamedPrefab
+        struct GuidPrefab
         {
             // System.Guid isn't serializable, so we store the Guid as a string. At runtime, this is converted back to a System.Guid
             public string imageGuid;
             public GameObject imagePrefab;
 
-            public NamedPrefab(Guid guid, GameObject prefab)
+            public GuidPrefab(Guid guid, GameObject prefab)
             {
                 imageGuid = guid.ToString();
                 imagePrefab = prefab;
@@ -36,7 +36,7 @@ using System.Linq;
 
         [SerializeField]
         [HideInInspector]
-        List<NamedPrefab> m_PrefabsList = new List<NamedPrefab>();
+        List<GuidPrefab> m_PrefabsList = new List<GuidPrefab>();
 
         Dictionary<Guid, GameObject> m_PrefabsDictionary    = new Dictionary<Guid, GameObject>();
         Dictionary<Guid, GameObject> m_Instantiated         = new Dictionary<Guid, GameObject>();
@@ -60,7 +60,7 @@ using System.Linq;
             m_PrefabsList.Clear();
             foreach (var kvp in m_PrefabsDictionary)
             {
-                m_PrefabsList.Add(new NamedPrefab(kvp.Key, kvp.Value));
+                m_PrefabsList.Add(new GuidPrefab(kvp.Key, kvp.Value));
             }
         }
 
@@ -170,8 +170,8 @@ using System.Linq;
         /// This customizes the inspector component and updates the prefab list when
         /// the reference image library is changed.
         /// </summary>
-        [CustomEditor(typeof(standPrefabImagePairManager))]
-        class standPrefabImagePairManagerInspector : Editor
+        [CustomEditor(typeof(PrefabManager))]
+        class standPrefabManagerInspector : Editor
         {
             List<XRReferenceImage> m_ReferenceImages = new List<XRReferenceImage>();
             bool m_IsExpanded = true;
@@ -196,7 +196,7 @@ using System.Linq;
             public override void OnInspectorGUI()
             {
                 //customized inspector
-                var behaviour = serializedObject.targetObject as standPrefabImagePairManager;
+                var behaviour = serializedObject.targetObject as PrefabManager;
 
                 serializedObject.Update();
                 using (new EditorGUI.DisabledScope(true))

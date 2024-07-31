@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-namespace UnityEngine.XR.ARFoundation.Samples
-{
     /// <summary>
     /// Change the prefab for the first image in library at runtime.
     /// </summary>
@@ -93,10 +91,10 @@ namespace UnityEngine.XR.ARFoundation.Samples
                         break;
                     }
 
-                    var manager = GetComponent<PrefabImagePairManager>();
+                    var manager = GetComponent<PrefabManager>();
                     if (!manager)
                     {
-                        SetError($"No {nameof(PrefabImagePairManager)} available.");
+                        SetError($"No {nameof(PrefabManager)} available.");
                         break;
                     }
 
@@ -123,10 +121,10 @@ namespace UnityEngine.XR.ARFoundation.Samples
                         break;
                     }
 
-                    var manager = GetComponent<PrefabImagePairManager>();
+                    var manager = GetComponent<PrefabManager>();
                     if (!manager)
                     {
-                        SetError($"No {nameof(PrefabImagePairManager)} available.");
+                        SetError($"No {nameof(PrefabManager)} available.");
                         break;
                     }
 
@@ -144,4 +142,4 @@ namespace UnityEngine.XR.ARFoundation.Samples
             }
         }
     }
-}
+
