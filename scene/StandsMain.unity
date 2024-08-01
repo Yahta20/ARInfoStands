@@ -337,7 +337,7 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  m_SerializedLibrary: {fileID: 11400000, guid: ffb519a41812b0c479089c1423f34c54,
+  m_SerializedLibrary: {fileID: 11400000, guid: 4fa45d0f2e5b102459726b822240c970,
     type: 2}
   m_MaxNumberOfMovingImages: 0
   m_TrackedImagePrefab: {fileID: 0}
@@ -354,22 +354,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PrefabsList:
-  - imageGuid: e4a39e71-934a-4700-b598-54f2134dda01
+  - imageGuid: d9f31d41-f202-4c11-8a0f-5845ee75db91
+    imagePrefab: {fileID: 6689992741278781415, guid: 3549fdaf258e11846b85a316c16c699c,
+      type: 3}
+  - imageGuid: 8966357b-e336-4dcc-a30a-abc52f62727e
+    imagePrefab: {fileID: 7038220984588547355, guid: 9d914c3d0b1114964b654dbb800f73cd,
+      type: 3}
+  - imageGuid: 8e1c3972-3711-41a9-87bb-45e6387867d8
     imagePrefab: {fileID: 919132149155446097, guid: 73b694bb0f61cd14e9e1ed7b578ac09a,
       type: 3}
-  - imageGuid: 12d4d7d8-1392-4b69-a22c-18a986bb8a00
-    imagePrefab: {fileID: 919132149155446097, guid: e3493855a112e8248a2ea2c9828a51a1,
+  - imageGuid: e78bbb29-f8af-4ef9-ba39-d9e4e1f883ef
+    imagePrefab: {fileID: 7412390272454394293, guid: 54342b266035240ee8ca9d5949959c56,
       type: 3}
-  - imageGuid: 997cfdb9-a7e1-49c1-ae28-d6ab579f3cb7
-    imagePrefab: {fileID: 919132149155446097, guid: f077c919501a44778a0c2edb6eb1a54a,
-      type: 3}
-  - imageGuid: 8f76794f-e11c-4b53-b8ec-ed2f8c5b5918
-    imagePrefab: {fileID: 919132149155446097, guid: 46c1c422ff6897f49a404b012dc924d3,
-      type: 3}
-  - imageGuid: 0c06efc8-00c0-4989-8489-69fed4a9ae20
+  - imageGuid: aa044a33-9599-4c6f-b79d-2ba74db9e029
     imagePrefab: {fileID: 5041381962731189403, guid: fb69c6bd30530e7439ebf10d0fd3c2d2,
       type: 3}
-  m_ImageLibrary: {fileID: 11400000, guid: ffb519a41812b0c479089c1423f34c54, type: 2}
+  m_ImageLibrary: {fileID: 11400000, guid: 4fa45d0f2e5b102459726b822240c970, type: 2}
 --- !u!1 &1809621586
 GameObject:
   m_ObjectHideFlags: 0

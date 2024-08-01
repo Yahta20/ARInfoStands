@@ -157,7 +157,7 @@ using System.Linq;
         /// the reference image library is changed.
         /// </summary>
         [CustomEditor(typeof(PrefabManager))]
-        class standPrefabManagerInspector : Editor
+        class PrefabManagerInspector : Editor
         {
             List<XRReferenceImage> m_ReferenceImages = new List<XRReferenceImage>();
             bool m_IsExpanded = true;
